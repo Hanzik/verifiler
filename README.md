@@ -1,5 +1,7 @@
 # Verifiler - File verification library
 
+[GitHub](https://github.com/Hanzik/verifiler) | [NuGet](https://www.nuget.org/packages/Verifiler/)
+
 For when you need a thorough file inspection for your .NET projects.
 
 ### Features
