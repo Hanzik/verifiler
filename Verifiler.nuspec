@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>Verifiler</id>
+    <version>1.1</version>
+    <title>Verifiler</title>
+    <authors>Jan Vrátník</authors>
+    <owners>Jan Vrátník</owners>
+    <licenseUrl>https://www.apache.org/licenses/LICENSE-2.0.html</licenseUrl>
+    <projectUrl>https://github.com/Hanzik/verifiler</projectUrl>
+    <description>Customizable open source library for validating generic file formats (size, extension, file signature, checksum etc.) with available extensions which can detect corrupted files of some popular file formats.</description>
+    <copyright>Copyright 2017</copyright>
+    <tags>file validation verification size extension signature checksum</tags>
+    <language>en-GB</language>
+  </metadata>
+</package>

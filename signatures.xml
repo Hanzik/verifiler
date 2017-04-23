@@ -1,0 +1,499 @@
+<?xml version="1.0" encoding="utf-8"?>
+  <FileExtensions>
+    <FileExtension extension='.123' signature='00 00 1A 00 05 10 04' />
+    <FileExtension extension='.386' signature='4D 5A' />
+    <FileExtension extension='.3GP' signature='00 00 00 14 66 74 79 70' />
+    <FileExtension extension='.3GP' signature='00 00 00 20 66 74 79 70' />
+    <FileExtension extension='.3GP5' signature='00 00 00 18 66 74 79 70' />
+    <FileExtension extension='.4XM' signature='52 49 46 46' />
+    <FileExtension extension='.7Z' signature='37 7A BC AF 27 1C' />
+    <FileExtension extension='.ABA' signature='00 01 42 41' />
+    <FileExtension extension='.ABD' signature='51 57 20 56 65 72 2E 20' />
+    <FileExtension extension='.ABI' signature='41 4F 4C 49 4E 44 45 58' />
+    <FileExtension extension='.ABI' signature='41 4F 4C' />
+    <FileExtension extension='.ABY' signature='41 4F 4C 44 42' />
+    <FileExtension extension='.ABY' signature='41 4F 4C' />
+    <FileExtension extension='.AC' signature='72 69 66 66' />
+    <FileExtension extension='.ACCDB' signature='00 01 00 00 53 74 61 6E 64 61 72 64 20 41 43 45 20 44 42' />
+    <FileExtension extension='.ACM' signature='4D 5A' />
+    <FileExtension extension='.ACS' signature='C3 AB CD AB' />
+    <FileExtension extension='.AC_' signature='D0 CF 11 E0 A1 B1 1A E1' />
+    <FileExtension extension='.AD' signature='52 45 56 4E 55 4D 3A 2C' />
+    <FileExtension extension='.ADF' signature='44 4F 53' />
+    <FileExtension extension='.ADP' signature='D0 CF 11 E0 A1 B1 1A E1' />
+    <FileExtension extension='.ADX' signature='03 00 00 00 41 50 50 52' />
+    <FileExtension extension='.ADX' signature='80 00 00 20 03 12 04' />
+    <FileExtension extension='.AIFF' signature='46 4F 52 4D 00' />
+    <FileExtension extension='.AIN' signature='21 12' />
+    <FileExtension extension='.AMR' signature='23 21 41 4D 52' />
+    <FileExtension extension='.ANI' signature='52 49 46 46' />
+    <FileExtension extension='.API' signature='4D 5A 90 00 03 00 00 00' />
+    <FileExtension extension='.APR' signature='D0 CF 11 E0 A1 B1 1A E1' />
+    <FileExtension extension='.ARC' signature='41 72 43 01' />
+    <FileExtension extension='.ARC' signature='1A 02' />
+    <FileExtension extension='.ARC' signature='1A 03' />
+    <FileExtension extension='.ARC' signature='1A 04' />
+    <FileExtension extension='.ARC' signature='1A 08' />
+    <FileExtension extension='.ARC' signature='1A 09' />
+    <FileExtension extension='.ARJ' signature='60 EA' />
+    <FileExtension extension='.ARL' signature='D4 2A' />
+    <FileExtension extension='.ASF' signature='30 26 B2 75 8E 66 CF 11' />
+    <FileExtension extension='.AST' signature='53 43 48 6C' />
+    <FileExtension extension='.ASX' signature='3C' />
+    <FileExtension extension='.AU' signature='64 6E 73 2E' />
+    <FileExtension extension='.AU' signature='2E 73 6E 64' />
+    <FileExtension extension='.AUT' signature='D4 2A' />
+    <FileExtension extension='.AVI' signature='52 49 46 46' />
+    <FileExtension extension='.AW' signature='8A 01 09 00 00 00 E1 08' />
+    <FileExtension extension='.AX' signature='4D 5A 90 00 03 00 00 00' />
+    <FileExtension extension='.AX' signature='4D 5A' />
+    <FileExtension extension='.BAG' signature='41 4F 4C 20 46 65 65 64' />
+    <FileExtension extension='.BAG' signature='41 4F 4C' />
+    <FileExtension extension='.BDR' signature='58 54' />
+    <FileExtension extension='.BIN' signature='42 4C 49 32 32 33 51' />
+    <FileExtension extension='.BMP' signature='42 4D' />
+    <FileExtension extension='.BZ2' signature='42 5A 68' />
+    <FileExtension extension='.CAB' signature='49 53 63 28' />
+    <FileExtension extension='.CAB' signature='4D 53 43 46' />
+    <FileExtension extension='.CAL' signature='73 72 63 64 6F 63 69 64' />
+    <FileExtension extension='.CAL' signature='53 75 70 65 72 43 61 6C' />
+    <FileExtension extension='.CAL' signature='B5 A2 B0 B3 B3 B0 A5 B5' />
+    <FileExtension extension='.CAP' signature='58 43 50 00' />
+    <FileExtension extension='.CAP' signature='52 54 53 53' />
+    <FileExtension extension='.CAS' signature='5F 43 41 53 45 5F' />
+    <FileExtension extension='.CAT' signature='30' />
+    <FileExtension extension='.CBD' signature='43 42 46 49 4C 45' />
+    <FileExtension extension='.CBK' signature='5F 43 41 53 45 5F' />
+    <FileExtension extension='.CDA' signature='52 49 46 46' />
+    <FileExtension extension='.CDR' signature='52 49 46 46' />
+    <FileExtension extension='.CDR' signature='45 4C 49 54 45 20 43 6F' />
+    <FileExtension extension='.CDR' signature='4D 53 5F 56 4F 49 43 45' />
+    <FileExtension extension='.CFG' signature='5B 66 6C 74 73 69 6D 2E' />
+    <FileExtension extension='.CHI' signature='49 54 53 46' />
+    <FileExtension extension='.CHM' signature='49 54 53 46' />
+    <FileExtension extension='.CLASS' signature='CA FE BA BE' />
+    <FileExtension extension='.CLB' signature='43 4F 4D 2B' />
+    <FileExtension extension='.CLB' signature='43 4D 58 31' />
+    <FileExtension extension='.CMX' signature='52 49 46 46' />
+    <FileExtension extension='.CNV' signature='53 51 4C 4F 43 4F 4E 56' />
+    <FileExtension extension='.COD' signature='4E 61 6D 65 3A 20' />
+    <FileExtension extension='.COM' signature='4D 5A' />
+    <FileExtension extension='.COM' signature='E8' />
+    <FileExtension extension='.COM' signature='E9' />
+    <FileExtension extension='.COM' signature='EB' />
+    <FileExtension extension='.CPE' signature='46 41 58 43 4F 56 45 52' />
+    <FileExtension extension='.CPI' signature='53 49 45 54 52 4F 4E 49' />
+    <FileExtension extension='.CPI' signature='FF 46 4F 4E 54' />
+    <FileExtension extension='.CPL' signature='4D 5A' />
+    <FileExtension extension='.CPL' signature='DC DC' />
+    <FileExtension extension='.CPT' signature='43 50 54 37 46 49 4C 45' />
+    <FileExtension extension='.CPT' signature='43 50 54 46 49 4C 45' />
+    <FileExtension extension='.CPX' signature='5B 57 69 6E 64 6F 77 73' />
+    <FileExtension extension='.CRU' signature='43 52 55 53 48 20 76' />
+    <FileExtension extension='.CRW' signature='49 49 1A 00 00 00 48 45' />
+    <FileExtension extension='.CSH' signature='63 75 73 68 00 00 00 02' />
+    <FileExtension extension='.CTF' signature='43 61 74 61 6C 6F 67 20' />
+    <FileExtension extension='.CTL' signature='56 45 52 53 49 4F 4E 20' />
+    <FileExtension extension='.CUIX' signature='50 4B 03 04' />
+    <FileExtension extension='.CUR' signature='00 00 02 00' />
+    <FileExtension extension='.DAT' signature='52 49 46 46' />
+    <FileExtension extension='.DAT' signature='A9 0D 00 00 00 00 00 00' />
+    <FileExtension extension='.DAT' signature='73 6C 68 21' />
+    <FileExtension extension='.DAT' signature='73 6C 68 2E' />
+    <FileExtension extension='.DAT' signature='41 56 47 36 5F 49 6E 74' />
+    <FileExtension extension='.DAT' signature='03' />
+    <FileExtension extension='.DAT' signature='45 52 46 53 53 41 56 45' />
+    <FileExtension extension='.DAT' signature='43 6C 69 65 6E 74 20 55' />
+    <FileExtension extension='.DAT' signature='49 6E 6E 6F 20 53 65 74' />
+    <FileExtension extension='.DAT' signature='50 4E 43 49 55 4E 44 4F' />
+    <FileExtension extension='.DAT' signature='50 45 53 54' />
+    <FileExtension extension='.DAT' signature='1A 52 54 53 20 43 4F 4D' />
+    <FileExtension extension='.DAT' signature='52 41 5A 41 54 44 42 31' />
+    <FileExtension extension='.DAT' signature='4E 41 56 54 52 41 46 46' />
+    <FileExtension extension='.DAT' signature='55 46 4F 4F 72 62 69 74' />
+    <FileExtension extension='.DAT' signature='57 4D 4D 50' />
+    <FileExtension extension='.DAT' signature='43 52 45 47' />
+    <FileExtension extension='.DAT' signature='72 65 67 66' />
+    <FileExtension extension='.DB' signature='D0 CF 11 E0 A1 B1 1A E1' />
+    <FileExtension extension='.DB' signature='08' />
+    <FileExtension extension='.DB' signature='00 06 15 61 00 00 00 02 00 00 04 D2 00 00 10 00' />
+    <FileExtension extension='.DB' signature='44 42 46 48' />
+    <FileExtension extension='.DB' signature='53 51 4C 69 74 65 20 66 6F 72 6D 61 74 20 33 00' />
+    <FileExtension extension='.DB' signature='FD FF FF FF' />
+    <FileExtension extension='.DB3' signature='03' />
+    <FileExtension extension='.DB4' signature='04' />
+    <FileExtension extension='.DBA' signature='00 01 42 44' />
+    <FileExtension extension='.DBB' signature='6C 33 33 6C' />
+    <FileExtension extension='.DBF' signature='4F 50 4C 44 61 74 61 62' />
+    <FileExtension extension='.DBX' signature='CF AD 12 FE' />
+    <FileExtension extension='.DCI' signature='3C 21 64 6F 63 74 79 70' />
+    <FileExtension extension='.DCX' signature='B1 68 DE 3A' />
+    <FileExtension extension='.dex' signature='64 65 78 0A 30 30 39 00' />
+    <FileExtension extension='.DIB' signature='42 4D' />
+    <FileExtension extension='.DLL' signature='4D 5A' />
+    <FileExtension extension='.DMG' signature='78' />
+    <FileExtension extension='.DMP' signature='4D 44 4D 50 93 A7' />
+    <FileExtension extension='.DMP' signature='50 41 47 45 44 55' />
+    <FileExtension extension='.DMS' signature='44 4D 53 21' />
+    <FileExtension extension='.DOC' signature='D0 CF 11 E0 A1 B1 1A E1' />
+    <FileExtension extension='.DOC' signature='0D 44 4F 43' />
+    <FileExtension extension='.DOC' signature='CF 11 E0 A1 B1 1A E1 00' />
+    <FileExtension extension='.DOC' signature='DB A5 2D 00' />
+    <FileExtension extension='.DOC' signature='EC A5 C1 00' />
+    <FileExtension extension='.DOCX' signature='50 4B 03 04' />
+    <FileExtension extension='.DOCX' signature='50 4B 03 04 14 00 06 00' />
+    <FileExtension extension='.DOT' signature='D0 CF 11 E0 A1 B1 1A E1' />
+    <FileExtension extension='.DRV' signature='4D 5A' />
+    <FileExtension extension='.DRW' signature='07' />
+    <FileExtension extension='.DRW' signature='01 FF 02 04 03 02' />
+    <FileExtension extension='.DS4' signature='52 49 46 46' />
+    <FileExtension extension='.DSN' signature='4D 56' />
+    <FileExtension extension='.DSP' signature='23 20 4D 69 63 72 6F 73' />
+    <FileExtension extension='.DSS' signature='02 64 73 73' />
+    <FileExtension extension='.DSW' signature='64 73 77 66 69 6C 65' />
+    <FileExtension extension='.DTD' signature='07 64 74 32 64 64 74 64' />
+    <FileExtension extension='.DUN' signature='5B 50 68 6F 6E 65 5D' />
+    <FileExtension extension='.DVF' signature='4D 53 5F 56 4F 49 43 45' />
+    <FileExtension extension='.DVR' signature='44 56 44' />
+    <FileExtension extension='.DW4' signature='4F 7B' />
+    <FileExtension extension='.DWG' signature='41 43 31 30' />
+    <FileExtension extension='.E01' signature='45 56 46 09 0D 0A FF 00' />
+    <FileExtension extension='.E01' signature='4C 56 46 09 0D 0A FF 00' />
+    <FileExtension extension='.ECF' signature='5B 47 65 6E 65 72 61 6C' />
+    <FileExtension extension='.EFX' signature='DC FE' />
+    <FileExtension extension='.EML' signature='58 2D' />
+    <FileExtension extension='.EML' signature='52 65 74 75 72 6E 2D 50' />
+    <FileExtension extension='.EML' signature='46 72 6F 6D' />
+    <FileExtension extension='.ENL' signature='40 40 40 20 00 00 40 40 40 40' />
+    <FileExtension extension='.EPS' signature='C5 D0 D3 C6' />
+    <FileExtension extension='.EPS' signature='25 21 50 53 2D 41 64 6F' />
+    <FileExtension extension='.ETH' signature='1A 35 01 00' />
+    <FileExtension extension='.EVT' signature='30 00 00 00 4C 66 4C 65' />
+    <FileExtension extension='.EVTX' signature='45 6C 66 46 69 6C 65 00' />
+    <FileExtension extension='.EXE' signature='4D 5A' />
+    <FileExtension extension='.FDF' signature='25 50 44 46' />
+    <FileExtension extension='.FLAC' signature='66 4C 61 43 00 00 00 22' />
+    <FileExtension extension='.FLI' signature='00 11' />
+    <FileExtension extension='.FLT' signature='4D 5A 90 00 03 00 00 00' />
+    <FileExtension extension='.FLT' signature='76 32 30 30 33 2E 31 30' />
+    <FileExtension extension='.FLV' signature='46 4C 56' />
+    <FileExtension extension='.FM' signature='3C 4D 61 6B 65 72 46 69' />
+    <FileExtension extension='.FON' signature='4D 5A' />
+    <FileExtension extension='.FTR' signature='D2 0A 00 00' />
+    <FileExtension extension='.GHO' signature='FE EF' />
+    <FileExtension extension='.GHS' signature='FE EF' />
+    <FileExtension extension='.GID' signature='3F 5F 03 00' />
+    <FileExtension extension='.GID' signature='4C 4E 02 00' />
+    <FileExtension extension='.GIF' signature='47 49 46 38' />
+    <FileExtension extension='.GPG' signature='99' />
+    <FileExtension extension='.GRP' signature='50 4D 43 43' />
+    <FileExtension extension='.GX2' signature='47 58 32' />
+    <FileExtension extension='.GZ' signature='1F 8B 08' />
+    <FileExtension extension='.HAP' signature='91 33 48 46' />
+    <FileExtension extension='.HDMP' signature='4D 44 4D 50 93 A7' />
+    <FileExtension extension='.HDR' signature='49 53 63 28' />
+    <FileExtension extension='.HDR' signature='23 3F 52 41 44 49 41 4E' />
+    <FileExtension extension='.hip' signature='48 69 50 21' />
+    <FileExtension extension='.HLP' signature='00 00 FF FF FF FF' />
+    <FileExtension extension='.HLP' signature='3F 5F 03 00' />
+    <FileExtension extension='.HLP' signature='4C 4E 02 00' />
+    <FileExtension extension='.HQX' signature='28 54 68 69 73 20 66 69' />
+    <FileExtension extension='.ICO' signature='00 00 01 00' />
+    <FileExtension extension='.IDX' signature='41 4F 4C 44 42' />
+    <FileExtension extension='.IDX' signature='41 4F 4C' />
+    <FileExtension extension='.IDX' signature='50 00 00 00 20 00 00 00' />
+    <FileExtension extension='.IFO' signature='44 56 44' />
+    <FileExtension extension='.IMG' signature='50 49 43 54 00 08' />
+    <FileExtension extension='.IMG' signature='EB 3C 90 2A' />
+    <FileExtension extension='.IMG' signature='53 43 4D 49' />
+    <FileExtension extension='.IND' signature='41 4F 4C 49 44 58' />
+    <FileExtension extension='.IND' signature='41 4F 4C' />
+    <FileExtension extension='.INFO' signature='E3 10 00 01 00 00 00 00' />
+    <FileExtension extension='.INFO' signature='54 68 69 73 20 69 73 20' />
+    <FileExtension extension='.INFO' signature='7A 62 65 78' />
+    <FileExtension extension='.ISO' signature='43 44 30 30 31' />
+    <FileExtension extension='.IVR' signature='2E 52 45 43' />
+    <FileExtension extension='.JAR' signature='50 4B 03 04' />
+    <FileExtension extension='.JAR' signature='5F 27 A8 89' />
+    <FileExtension extension='.JAR' signature='4A 41 52 43 53 00' />
+    <FileExtension extension='.JAR' signature='50 4B 03 04 14 00 08 00' />
+    <FileExtension extension='.JFIF' signature='FF D8 FF E0' />
+    <FileExtension extension='.JFIF' signature='FF D8 FF E0' />
+    <FileExtension extension='.JG' signature='4A 47 03 0E' />
+    <FileExtension extension='.JG' signature='4A 47 04 0E' />
+    <FileExtension extension='.JNT' signature='4E 42 2A 00' />
+    <FileExtension extension='.JP2' signature='00 00 00 0C 6A 50 20 20' />
+    <FileExtension extension='.JPE' signature='FF D8 FF E0' />
+    <FileExtension extension='.JPEG' signature='FF D8 FF E0' />
+    <FileExtension extension='.JPEG' signature='FF D8 FF E2' />
+    <FileExtension extension='.JPEG' signature='FF D8 FF E3' />
+    <FileExtension extension='.JPG' signature='FF D8 FF E0' />
+    <FileExtension extension='.JPG' signature='FF D8 FF E1' />
+    <FileExtension extension='.JPG' signature='FF D8 FF E8' />
+    <FileExtension extension='.JTP' signature='4E 42 2A 00' />
+    <FileExtension extension='.KGB' signature='4B 47 42 5F 61 72 63 68' />
+    <FileExtension extension='.KOZ' signature='49 44 33 03 00 00 00' />
+    <FileExtension extension='.KWD' signature='50 4B 03 04' />
+    <FileExtension extension='.LBK' signature='C8 00 79 00' />
+    <FileExtension extension='.LGC' signature='7B 0D 0A 6F 20' />
+    <FileExtension extension='.LGD' signature='7B 0D 0A 6F 20' />
+    <FileExtension extension='.LHA' signature='2D 6C 68' />
+    <FileExtension extension='.LIB' signature='21 3C 61 72 63 68 3E 0A' />
+    <FileExtension extension='.LIT' signature='49 54 4F 4C 49 54 4C 53' />
+    <FileExtension extension='.LNK' signature='4C 00 00 00 01 14 02 00' />
+    <FileExtension extension='.LOG' signature='2A 2A 2A 20 20 49 6E 73' />
+    <FileExtension extension='.LWP' signature='57 6F 72 64 50 72 6F' />
+    <FileExtension extension='.LZH' signature='2D 6C 68' />
+    <FileExtension extension='.M4A' signature='00 00 00 20 66 74 79 70 4D 34 41' />
+    <FileExtension extension='.MANIFEST' signature='3C 3F 78 6D 6C 20 76 65 72 73 69 6F 6E 3D' />
+    <FileExtension extension='.MAR' signature='4D 41 72 30 00' />
+    <FileExtension extension='.MAR' signature='4D 41 52 43' />
+    <FileExtension extension='.MAR' signature='4D 41 52 31 00' />
+    <FileExtension extension='.MDB' signature='00 01 00 00 53 74 61 6E 64 61 72 64 20 4A 65 74 20 44 42' />
+    <FileExtension extension='.MDF' signature='01 0F 00 00' />
+    <FileExtension extension='.MDI' signature='45 50' />
+    <FileExtension extension='.MID' signature='4D 54 68 64' />
+    <FileExtension extension='.MIDI' signature='4D 54 68 64' />
+    <FileExtension extension='.MIF' signature='3C 4D 61 6B 65 72 46 69' />
+    <FileExtension extension='.MIF' signature='56 65 72 73 69 6F 6E 20' />
+    <FileExtension extension='.MKV' signature='1A 45 DF A3 93 42 82 88' />
+    <FileExtension extension='.MLS' signature='4D 49 4C 45 53' />
+    <FileExtension extension='.MLS' signature='4D 56 32 31 34' />
+    <FileExtension extension='.MLS' signature='4D 56 32 43' />
+    <FileExtension extension='.MLS' signature='4D 4C 53 57' />
+    <FileExtension extension='.MMF' signature='4D 4D 4D 44 00 00' />
+    <FileExtension extension='.MNY' signature='00 01 00 00 4D 53 49 53 41 4D 20 44 61 74 61 62 61 73 65' />
+    <FileExtension extension='.MOF' signature='FF FE 23 00 6C 00 69 00' />
+    <FileExtension extension='.MOV' signature='6D 6F 6F 76' />
+    <FileExtension extension='.MOV' signature='66 72 65 65' />
+    <FileExtension extension='.MOV' signature='6D 64 61 74' />
+    <FileExtension extension='.MOV' signature='77 69 64 65' />
+    <FileExtension extension='.MOV' signature='70 6E 6F 74' />
+    <FileExtension extension='.MOV' signature='73 6B 69 70' />
+    <FileExtension extension='.MP' signature='0C ED' />
+    <FileExtension extension='.MP3' signature='49 44 33' />
+    <FileExtension extension='.MPG' signature='00 00 01 BA' />
+    <FileExtension extension='.MPG' signature='00 00 01 B3' />
+    <FileExtension extension='.MSC' signature='D0 CF 11 E0 A1 B1 1A E1' />
+    <FileExtension extension='.MSC' signature='3C 3F 78 6D 6C 20 76 65 72 73 69 6F 6E 3D 22 31 2E 30 22 3F 3E 0D 0A 3C 4D 4D 43 5F 43 6F 6E 73 6F 6C 65 46 69 6C 65 20 43 6F 6E 73 6F 6C 65 56 65 72' />
+    <FileExtension extension='.MSI' signature='D0 CF 11 E0 A1 B1 1A E1' />
+    <FileExtension extension='.MSI' signature='23 20' />
+    <FileExtension extension='.MSV' signature='4D 53 5F 56 4F 49 43 45' />
+    <FileExtension extension='.MTW' signature='D0 CF 11 E0 A1 B1 1A E1' />
+    <FileExtension extension='.NRI' signature='0E 4E 65 72 6F 49 53 4F' />
+    <FileExtension extension='.NSF' signature='1A 00 00 04 00 00' />
+    <FileExtension extension='.NSF' signature='4E 45 53 4D 1A 01' />
+    <FileExtension extension='.NTF' signature='1A 00 00' />
+    <FileExtension extension='.NTF' signature='4E 49 54 46 30' />
+    <FileExtension extension='.NTF' signature='30 31 4F 52 44 4E 41 4E' />
+    <FileExtension extension='.NVRAM' signature='4D 52 56 4E' />
+    <FileExtension extension='.OBJ' signature='4C 01' />
+    <FileExtension extension='.OBJ' signature='80' />
+    <FileExtension extension='.OCX' signature='4D 5A' />
+    <FileExtension extension='.ODP' signature='50 4B 03 04' />
+    <FileExtension extension='.ODT' signature='50 4B 03 04' />
+    <FileExtension extension='.OGA' signature='4F 67 67 53 00 02 00 00' />
+    <FileExtension extension='.OGG' signature='4F 67 67 53 00 02 00 00' />
+    <FileExtension extension='.OGV' signature='4F 67 67 53 00 02 00 00' />
+    <FileExtension extension='.OGX' signature='4F 67 67 53 00 02 00 00' />
+    <FileExtension extension='.OLB' signature='4D 5A' />
+    <FileExtension extension='.ONE' signature='E4 52 5C 7B 8C D8 A7 4D' />
+    <FileExtension extension='.OPT' signature='D0 CF 11 E0 A1 B1 1A E1' />
+    <FileExtension extension='.OPT' signature='FD FF FF FF 20' />
+    <FileExtension extension='.ORG' signature='41 4F 4C 56 4D 31 30 30' />
+    <FileExtension extension='.OTT' signature='50 4B 03 04' />
+    <FileExtension extension='.P10' signature='64 00 00 00' />
+    <FileExtension extension='.PAK' signature='1A 0B' />
+    <FileExtension extension='.PAK' signature='50 41 43 4B' />
+    <FileExtension extension='.PAT' signature='47 50 41 54' />
+    <FileExtension extension='.PAX' signature='50 41 58' />
+    <FileExtension extension='.PCH' signature='56 43 50 43 48 30' />
+    <FileExtension extension='.PCX' signature='0A 05 01 01' />
+    <FileExtension extension='.PCX' signature='0A 03 01 01' />
+    <FileExtension extension='.PCX' signature='0A 02 01 01' />
+    <FileExtension extension='.PDB' signature='AC ED 00 05 73 72 00 12' />
+    <FileExtension extension='.PDB' signature='73 7A 65 7A' />
+    <FileExtension extension='.PDB' signature='73 6D 5F' />
+    <FileExtension extension='.PDB' signature='4D 69 63 72 6F 73 6F 66 74 20 43 2F 43 2B 2B 20' />
+    <FileExtension extension='.PDB' signature='4D 2D 57 20 50 6F 63 6B' />
+    <FileExtension extension='.PDF' signature='25 50 44 46' />
+    <FileExtension extension='.PF' signature='11 00 00 00 53 43 43 41' />
+    <FileExtension extension='.PFC' signature='41 4F 4C' />
+    <FileExtension extension='.PFC' signature='41 4F 4C 56 4D 31 30 30' />
+    <FileExtension extension='.PGD' signature='50 47 50 64 4D 41 49 4E' />
+    <FileExtension extension='.PGM' signature='50 35 0A' />
+    <FileExtension extension='.PIF' signature='4D 5A' />
+    <FileExtension extension='.PKR' signature='99 01' />
+    <FileExtension extension='.PNG' signature='89 50 4E 47 0D 0A 1A 0A' />
+    <FileExtension extension='.PPS' signature='D0 CF 11 E0 A1 B1 1A E1' />
+    <FileExtension extension='.PPT' signature='FD FF FF FF 43 00 00 00' />
+    <FileExtension extension='.PPT' signature='FD FF FF FF 1C 00 00 00' />
+    <FileExtension extension='.PPT' signature='D0 CF 11 E0 A1 B1 1A E1' />
+    <FileExtension extension='.PPT' signature='FD FF FF FF 0E 00 00 00' />
+    <FileExtension extension='.PPT' signature='A0 46 1D F0' />
+    <FileExtension extension='.PPT' signature='0F 00 E8 03' />
+    <FileExtension extension='.PPT' signature='00 6E 1E F0' />
+    <FileExtension extension='.PPTX' signature='50 4B 03 04' />
+    <FileExtension extension='.PPTX' signature='50 4B 03 04 14 00 06 00' />
+    <FileExtension extension='.PPZ' signature='4D 53 43 46' />
+    <FileExtension extension='.PRC' signature='74 42 4D 50 4B 6E 57 72' />
+    <FileExtension extension='.PRC' signature='42 4F 4F 4B 4D 4F 42 49' />
+    <FileExtension extension='.PSD' signature='38 42 50 53' />
+    <FileExtension extension='.PSP' signature='7E 42 4B 00' />
+    <FileExtension extension='.PUB' signature='D0 CF 11 E0 A1 B1 1A E1' />
+    <FileExtension extension='.PWI' signature='7B 5C 70 77 69' />
+    <FileExtension extension='.PWL' signature='E3 82 85 96' />
+    <FileExtension extension='.PWL' signature='B0 4D 46 43' />
+    <FileExtension extension='.QBB' signature='45 86 00 00 06 00' />
+    <FileExtension extension='.QCP' signature='52 49 46 46' />
+    <FileExtension extension='.QDF' signature='AC 9E BD 8F 00 00' />
+    <FileExtension extension='.QEL' signature='51 45 4C 20' />
+    <FileExtension extension='.QEMU' signature='51 46 49' />
+    <FileExtension extension='.QPH' signature='03 00 00 00' />
+    <FileExtension extension='.QSD' signature='51 57 20 56 65 72 2E 20' />
+    <FileExtension extension='.QTS' signature='4D 5A' />
+    <FileExtension extension='.QTX' signature='4D 5A' />
+    <FileExtension extension='.QXD' signature='00 00 4D 4D 58 50 52' />
+    <FileExtension extension='.QXD' signature='00 00 49 49 58 50 52' />
+    <FileExtension extension='.RA' signature='2E 72 61 FD 00' />
+    <FileExtension extension='.RA' signature='2E 52 4D 46 00 00 00 12' />
+    <FileExtension extension='.RAM' signature='72 74 73 70 3A 2F 2F' />
+    <FileExtension extension='.RAR' signature='52 61 72 21 1A 07 00' />
+    <FileExtension extension='.REG' signature='52 45 47 45 44 49 54' />
+    <FileExtension extension='.REG' signature='FF FE' />
+    <FileExtension extension='.RGB' signature='01 DA 01 01 00 03' />
+    <FileExtension extension='.RM' signature='2E 52 4D 46' />
+    <FileExtension extension='.RMI' signature='52 49 46 46' />
+    <FileExtension extension='.RMVB' signature='2E 52 4D 46' />
+    <FileExtension extension='.RPM' signature='ED AB EE DB' />
+    <FileExtension extension='.RTD' signature='43 23 2B 44 A4 43 4D A5' />
+    <FileExtension extension='.RTF' signature='7B 5C 72 74 66 31' />
+    <FileExtension extension='.RVT' signature='D0 CF 11 E0 A1 B1 1A E1' />
+    <FileExtension extension='.SAM' signature='5B 76 65 72 5D' />
+    <FileExtension extension='.SAM' signature='5B 56 45 52 5D' />
+    <FileExtension extension='.SAV' signature='24 46 4C 32 40 28 23 29' />
+    <FileExtension extension='.SCR' signature='4D 5A' />
+    <FileExtension extension='.SDR' signature='53 4D 41 52 54 44 52 57' />
+    <FileExtension extension='.SH3' signature='48 48 47 42 31' />
+    <FileExtension extension='.SHD' signature='68 49 00 00' />
+    <FileExtension extension='.SHD' signature='67 49 00 00' />
+    <FileExtension extension='.SHD' signature='4B 49 00 00' />
+    <FileExtension extension='.SHD' signature='66 49 00 00' />
+    <FileExtension extension='.SHW' signature='53 48 4F 57' />
+    <FileExtension extension='.SIT' signature='53 74 75 66 66 49 74 20' />
+    <FileExtension extension='.SIT' signature='53 49 54 21 00' />
+    <FileExtension extension='.SKF' signature='07 53 4B 46' />
+    <FileExtension extension='.SKR' signature='95 01' />
+    <FileExtension extension='.SKR' signature='95 00' />
+    <FileExtension extension='.SLE' signature='3A 56 45 52 53 49 4F 4E' />
+    <FileExtension extension='.SLE' signature='41 43 76' />
+    <FileExtension extension='.SLN' signature='4D 69 63 72 6F 73 6F 66 74 20 56 69 73 75 61 6C' />
+    <FileExtension extension='.SNM' signature='00 1E 84 90 00 00 00 00' />
+    <FileExtension extension='.SNP' signature='4D 53 43 46' />
+    <FileExtension extension='.SOU' signature='D0 CF 11 E0 A1 B1 1A E1' />
+    <FileExtension extension='.SPL' signature='00 00 01 00' />
+    <FileExtension extension='.SPO' signature='D0 CF 11 E0 A1 B1 1A E1' />
+    <FileExtension extension='.SUD' signature='52 45 47 45 44 49 54' />
+    <FileExtension extension='.SUO' signature='FD FF FF FF 04' />
+    <FileExtension extension='.SWF' signature='46 57 53' />
+    <FileExtension extension='.SWF' signature='43 57 53' />
+    <FileExtension extension='.SXC' signature='50 4B 03 04' />
+    <FileExtension extension='.SXD' signature='50 4B 03 04' />
+    <FileExtension extension='.SXI' signature='50 4B 03 04' />
+    <FileExtension extension='.SXW' signature='50 4B 03 04' />
+    <FileExtension extension='.SYS' signature='E9' />
+    <FileExtension extension='.SYS' signature='E8' />
+    <FileExtension extension='.SYS' signature='FF 4B 45 59 42 20 20 20' />
+    <FileExtension extension='.SYS' signature='4D 5A' />
+    <FileExtension extension='.SYS' signature='FF FF FF FF' />
+    <FileExtension extension='.SYS' signature='FF' />
+    <FileExtension extension='.SYS' signature='EB' />
+    <FileExtension extension='.SYW' signature='41 4D 59 4F' />
+    <FileExtension extension='.TAR' signature='75 73 74 61 72' />
+    <FileExtension extension='.TAR.BZ2' signature='42 5A 68' />
+    <FileExtension extension='.TAR.Z' signature='1F A0' />
+    <FileExtension extension='.TAR.Z' signature='1F 9D 90' />
+    <FileExtension extension='.TB2' signature='42 5A 68' />
+    <FileExtension extension='.TBZ2' signature='42 5A 68' />
+    <FileExtension extension='.TIB' signature='B4 6E 68 44' />
+    <FileExtension extension='.TIF' signature='49 20 49' />
+    <FileExtension extension='.TIF' signature='4D 4D 00 2B' />
+    <FileExtension extension='.TIF' signature='4D 4D 00 2A' />
+    <FileExtension extension='.TIF' signature='49 49 2A 00' />
+    <FileExtension extension='.TIFF' signature='4D 4D 00 2B' />
+    <FileExtension extension='.TIFF' signature='4D 4D 00 2A' />
+    <FileExtension extension='.TIFF' signature='49 49 2A 00' />
+    <FileExtension extension='.TIFF' signature='49 20 49' />
+    <FileExtension extension='.TLB' signature='4D 53 46 54 02 00 01 00' />
+    <FileExtension extension='.TR1' signature='01 10' />
+    <FileExtension extension='.UCE' signature='55 43 45 58' />
+    <FileExtension extension='.UFA' signature='55 46 41 C6 D2 C1' />
+    <FileExtension extension='.VBX' signature='4D 5A' />
+    <FileExtension extension='.VCD' signature='45 4E 54 52 59 56 43 44' />
+    <FileExtension extension='.VCF' signature='42 45 47 49 4E 3A 56 43' />
+    <FileExtension extension='.VCW' signature='5B 4D 53 56 43' />
+    <FileExtension extension='.VHD' signature='63 6F 6E 65 63 74 69 78' />
+    <FileExtension extension='.VMDK' signature='4B 44 4D' />
+    <FileExtension extension='.VMDK' signature='23 20 44 69 73 6B 20 44' />
+    <FileExtension extension='.VMDK' signature='43 4F 57 44' />
+    <FileExtension extension='.VOB' signature='00 00 01 BA' />
+    <FileExtension extension='.VSD' signature='D0 CF 11 E0 A1 B1 1A E1' />
+    <FileExtension extension='.VXD' signature='4D 5A' />
+    <FileExtension extension='.WAB' signature='81 32 84 C1 85 05 D0 11' />
+    <FileExtension extension='.WAB' signature='9C CB CB 8D 13 75 D2 11' />
+    <FileExtension extension='.WAV' signature='52 49 46 46' />
+    <FileExtension extension='.WB2' signature='00 00 02 00' />
+    <FileExtension extension='.WB3' signature='3E 00 03 00 FE FF 09 00 06' />
+    <FileExtension extension='.WIZ' signature='D0 CF 11 E0 A1 B1 1A E1' />
+    <FileExtension extension='.WK1' signature='00 00 02 00 06 04 06 00' />
+    <FileExtension extension='.WK3' signature='00 00 1A 00 00 10 04 00' />
+    <FileExtension extension='.WK4' signature='00 00 1A 00 02 10 04 00' />
+    <FileExtension extension='.WK5' signature='00 00 1A 00 02 10 04 00' />
+    <FileExtension extension='.WKS' signature='0E 57 4B 53' />
+    <FileExtension extension='.WKS' signature='FF 00 02 00 04 04 05 54' />
+    <FileExtension extension='.WMA' signature='30 26 B2 75 8E 66 CF 11' />
+    <FileExtension extension='.WMF' signature='D7 CD C6 9A' />
+    <FileExtension extension='.WMV' signature='30 26 B2 75 8E 66 CF 11' />
+    <FileExtension extension='.WMZ' signature='50 4B 03 04' />
+    <FileExtension extension='.WP' signature='FF 57 50 43' />
+    <FileExtension extension='.WP5' signature='FF 57 50 43' />
+    <FileExtension extension='.WP6' signature='FF 57 50 43' />
+    <FileExtension extension='.WPD' signature='FF 57 50 43' />
+    <FileExtension extension='.WPF' signature='81 CD AB' />
+    <FileExtension extension='.WPG' signature='FF 57 50 43' />
+    <FileExtension extension='.WPL' signature='4D 69 63 72 6F 73 6F 66 74 20 57 69 6E 64 6F 77 73 20 4D 65 64 69 61 20 50 6C 61 79 65 72 20 2D 2D 20' />
+    <FileExtension extension='.WPP' signature='FF 57 50 43' />
+    <FileExtension extension='.WPS' signature='D0 CF 11 E0 A1 B1 1A E1' />
+    <FileExtension extension='.WRI' signature='BE 00 00 00 AB' />
+    <FileExtension extension='.WRI' signature='32 BE' />
+    <FileExtension extension='.WRI' signature='31 BE' />
+    <FileExtension extension='.WS' signature='1D 7D' />
+    <FileExtension extension='.WS2' signature='57 53 32 30 30 30' />
+    <FileExtension extension='.XDR' signature='3C' />
+    <FileExtension extension='.XLA' signature='D0 CF 11 E0 A1 B1 1A E1' />
+    <FileExtension extension='.XLS' signature='FD FF FF FF 10' />
+    <FileExtension extension='.XLS' signature='09 08 10 00 00 06 05 00' />
+    <FileExtension extension='.XLS' signature='FD FF FF FF 29' />
+    <FileExtension extension='.XLS' signature='FD FF FF FF 28' />
+    <FileExtension extension='.XLS' signature='FD FF FF FF 23' />
+    <FileExtension extension='.XLS' signature='D0 CF 11 E0 A1 B1 1A E1' />
+    <FileExtension extension='.XLS' signature='FD FF FF FF 22' />
+    <FileExtension extension='.XLS' signature='FD FF FF FF 1F' />
+    <FileExtension extension='.XLSX' signature='50 4B 03 04' />
+    <FileExtension extension='.XLSX' signature='50 4B 03 04 14 00 06 00' />
+    <FileExtension extension='.XML' signature='3C 3F 78 6D 6C 20 76 65 72 73 69 6F 6E 3D 22 31 2E 30 22 3F 3E' />
+    <FileExtension extension='.XPI' signature='50 4B 03 04' />
+    <FileExtension extension='.XPS' signature='50 4B 03 04' />
+    <FileExtension extension='.XPT' signature='50 4B 03 04' />
+    <FileExtension extension='.XPT' signature='58 50 43 4F 4D 0A 54 79' />
+    <FileExtension extension='.ZAP' signature='4D 5A 90 00 03 00 00 00 04 00 00 00 FF FF' />
+    <FileExtension extension='.&lt;' signature='1' />
+    <FileExtension extension='.ZIP' signature='50 4B 05 06' />
+    <FileExtension extension='.ZIP' signature='50 4B 03 04' />
+    <FileExtension extension='.ZIP' signature='50 4B 53 70 58' />
+    <FileExtension extension='.ZIP' signature='50 4B 4C 49 54 45' />
+    <FileExtension extension='.ZIP' signature='57 69 6E 5A 69 70' />
+    <FileExtension extension='.ZIP' signature='50 4B 03 04 14 00 01 00' />
+    <FileExtension extension='.ZIP' signature='50 4B 07 08' />
+    <FileExtension extension='.ZOO' signature='5A 4F 4F 20' />
+  </FileExtensions>
