@@ -1,6 +1,6 @@
 # Verifiler - File verification library
 
-For when you need a thorough file inspection.
+For when you need a thorough file inspection for your .NET projects.
 
 ### Features
   * Validate:
@@ -218,8 +218,7 @@ class StartsWithStep : VerifilerCore.Step {
 ## List of optional verification libraries
 
 You can install the following libraries (via NuGet) if you want to detect files which
-may have been corrupted during transfer (or any other reason). Such files then usually cannot
-be opened.
+may have been corrupted during transfer (or any other reason).
 
   * **VerifilerACCDB** ([GitHub](https://github.com/Hanzik/verifiler-accdb) | [NuGet](https://www.nuget.org/packages/VerifilerACCDB/)) - .accdb 
   * **VerifilerImage** ([GitHub](https://github.com/Hanzik/verifiler-image) | [NuGet](https://www.nuget.org/packages/VerifilerImage/)) - .jpg, .png
