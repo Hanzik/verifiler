@@ -221,15 +221,15 @@ You can install the following libraries (via NuGet) if you want to detect files 
 may have been corrupted during transfer (or any other reason). Such files then usually cannot
 be opened.
 
-  * [VerifilerACCDB](https://github.com/Hanzik/verifiler-accdb) - .accdb 
-  * [VerifilerImage](https://github.com/Hanzik/verifiler-image) - .jpg, .png
-  * [VerifilerMSLegacy](https://github.com/Hanzik/verifiler-mslegacy) - .xls 
-  * [VerifilerODF](https://github.com/Hanzik/verifiler-odf) - .ods, .odt
-  * [VerifilerOpenXML](https://github.com/Hanzik/verifiler-openxml) - .docx, .pptx, .xlsx
-  * [VerifilerPDF](https://github.com/Hanzik/verifiler-pdf) - .pdf
+  * **VerifilerACCDB** ([GitHub](https://github.com/Hanzik/verifiler-accdb) | [NuGet](https://www.nuget.org/packages/VerifilerACCDB/)) - .accdb 
+  * **VerifilerImage** ([GitHub](https://github.com/Hanzik/verifiler-image) | [NuGet](https://www.nuget.org/packages/VerifilerImage/)) - .jpg, .png
+  * **VerifilerMSLegacy** ([GitHub](https://github.com/Hanzik/verifiler-mslegacy) | [NuGet](https://www.nuget.org/packages/VerifilerMSLegacy/)) - .xls 
+  * **VerifilerODF** ([GitHub](https://github.com/Hanzik/verifiler-odf) | [NuGet](https://www.nuget.org/packages/VerifilerODF/)) - .ods, .odt
+  * **VerifilerOpenXML** ([GitHub](https://github.com/Hanzik/verifiler-openxml) | [NuGet](https://www.nuget.org/packages/VerifilerOpenXML/)) - .docx, .pptx, .xlsx
+  * **VerifilerPDF** ([GitHub](https://github.com/Hanzik/verifiler-pdf) | [NuGet](https://www.nuget.org/packages/VerifilerPDF/)) - .pdf
 
 
 ## List of other relevant repositories
 
-  * [VerifilerCore](https://github.com/Hanzik/verifiler-core) - Core library containing classes required by all other Verifiler libraries.
-  * [VerifilerTest](https://github.com/Hanzik/verifiler-test) - Unit test library.
+  * **VerifilerCore** ([GitHub](https://github.com/Hanzik/verifiler-core) | [NuGet](https://www.nuget.org/packages/VerifilerCore/)) - Core library containing classes required by all other Verifiler libraries.
+  * **VerifilerTest** ([GitHub](https://github.com/Hanzik/verifiler-test)) - Unit test library.
