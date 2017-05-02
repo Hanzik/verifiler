@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Linq;
 using System.Reflection;
 using NLog;
 using Verifiler.ValidationStep;
@@ -20,7 +21,7 @@ namespace Verifiler {
 
 		private readonly List<Step> stepsList = new List<Step>();
 		private readonly List<Step> customStepsList = new List<Step>();
-		private readonly List<Step> formatSpecificList;
+		private readonly List<Step> formatSpecificList = new List<Step>();
 
 		private readonly AVScan stepAvScan;
 		private readonly Extension stepExtension;
@@ -29,6 +30,7 @@ namespace Verifiler {
 		private readonly Size stepSize;
 		private readonly VirusTotalScan stepVirusTotalScan;
 
+		private readonly OptionalDependencyLoader loader;
 		private static readonly Logger logger = LogManager.GetCurrentClassLogger();
 
 		public Inspector() {
@@ -46,8 +48,11 @@ namespace Verifiler {
 			stepsList.Add(stepSignature);
 			stepsList.Add(stepSize);
 			
-			var loader = new OptionalDependencyLoader();
-			formatSpecificList = loader.Load();
+			Console.WriteLine("Loading optional dependencies");
+			loader = new OptionalDependencyLoader();
+			foreach (var validator in loader.Load()) {
+				formatSpecificList.Add(validator);
+			}
 		}
 
 		/// <summary>
@@ -224,20 +229,6 @@ namespace Verifiler {
 		}
 
 		/// <summary>
-		/// Sets up level of output.
-		/// </summary>
-		/// <param name="outputType">
-		///   <c>Const.OutputSilent</c> for running the library in silent mode - no output on command line can be expected.
-		///   <c>Const.OutputBrief</c> library will only print results of each verification step, no detailed messages can be expected.
-		///   <c>Const.OutputVerbose</c> in addition to previous step printouts, library will also print messages about every issue it encounters.
-		/// </param>
-		public Inspector SetOutput(int outputType) {
-			logger.Info("Setting output type to {0}", outputType);
-			Configuration.Instance.OutputType = outputType;
-			return this;
-		}
-
-		/// <summary>
 		/// Allows users to add custom verification step. Must extend VerificationStep.Step class and implement
 		/// methods Setup(), Run() and Cleanup(). Custom steps are run after all the default steps.
 		/// </summary>
@@ -276,6 +267,64 @@ namespace Verifiler {
 			logger.Info("Disabling format specific verifications");
 			Configuration.Instance.FormatSpecificEnabled = false;
 			return this;
+		}
+
+		/// <summary>
+		/// Return list of library names which were correctly loaded.
+		/// </summary>
+		/// <returns>
+		///   <c>List</c> of libraries which were correctly loaded and will be used during the Scan()
+		/// </returns>
+		public List<string> GetLoadedLibraries() {
+			return loader.GetLoadedLibraries();
+		}
+
+		/// <summary>
+		/// Find out what formats are supported by one of the Verifiler libraries. This method will
+		/// return list of extensions which have a verification library available.
+		/// </summary>
+		/// <returns>
+		///   <c>List</c> of formats which have a Verifiler library available via NuGet or GitHub.
+		/// </returns>
+		public List<string> GetListOfSupportedFormats() {
+			return loader.GetListOfSupportedFormats();
+		}
+
+		/// <summary>
+		/// Use this method to find out if optional library for your specific format was correctly loaded
+		/// and whether such file's integrity will be verified by the format specific validator.
+		/// </summary>
+		/// <param name="libraryName">Library name (eg. "VerifilerOpenXML", "VerifilerPDF").</param>
+		/// <returns>
+		///   <c>TRUE</c> if library was correctly loaded
+		/// </returns>
+		public bool IsLibraryLoaded(string libraryName) {
+			return loader.IsLibraryLoaded(libraryName);
+		}
+
+		/// <summary>
+		/// Use this method to find out if specified format is supported by one of the verification
+		/// libraries in the Verifiler bundle.
+		/// </summary>
+		/// <param name="format">Library name (eg. ".pdf", ".xlsx", ".jpg").</param>
+		/// <returns>
+		///   <c>TRUE</c> if library for this format exists and can be downloaded via GitHub or NuGet
+		/// </returns>
+		public bool IsFormatSupported(string format) {
+			return loader.IsFormatSupported(format);
+		}
+
+		/// <summary>
+		/// Use this method to find out if optional library for your specific format was correctly loaded
+		/// and whether such file's integrity will be verified by the format specific validator.
+		/// </summary>
+		/// <param name="format">File format (eg. ".jpg", ".doc", ".pdf").</param>
+		/// <returns>
+		///   <c>TRUE</c> if specified format will be validated (FormatSpecific validations must be enabled
+		/// via EnableFormatVerification() method.
+		/// </returns>
+		public bool IsFormatValidated(string format) {
+			return loader.IsFormatValidatorLoaded(format);
 		}
 
 		/// <summary>
@@ -348,7 +397,7 @@ namespace Verifiler {
 			logger.Debug("Initiating step {0}", step.Name);
 			step.Run();
 			result.AddExecutedStep(stepAvScan.Name);
-			result.SetFilesInvalid(step.InvalidFilesList, step.ErrorCode);
+			//result.SetFilesInvalid(step.InvalidFilesList, step.ErrorCode);
 			return step.Summary();
 		}
 

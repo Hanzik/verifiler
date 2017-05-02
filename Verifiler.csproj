@@ -48,10 +48,6 @@
     <Reference Include="System.Data" />
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Xml" />
-    <Reference Include="VerifilerCore, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\VerifilerCore.1.1.0\lib\net452\VerifilerCore.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
     <Reference Include="VirusTotal.NET, Version=1.5.3.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\VirusTotal.NET.1.5.3\lib\net45\VirusTotal.NET.dll</HintPath>
       <Private>True</Private>
@@ -75,9 +71,18 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Resources\libraries.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="Resources\signatures.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\VerifilerCore\VerifilerCore.csproj">
+      <Project>{4126df95-9116-4f55-aa57-48e4e72094d1}</Project>
+      <Name>VerifilerCore</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

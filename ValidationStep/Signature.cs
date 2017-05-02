@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Reflection;
 using System.Xml.Serialization;
+using NLog;
 using VerifilerCore;
 
 namespace Verifiler.ValidationStep {
@@ -17,6 +18,7 @@ namespace Verifiler.ValidationStep {
 
 		private readonly Dictionary<string, List<int[]>> signatures = new Dictionary<string, List<int[]>>();
 		public override int ErrorCode { get; set; } = Error.Signature;
+		private static Logger logger = LogManager.GetCurrentClassLogger();
 
 		public Signature() {
 
@@ -51,7 +53,12 @@ namespace Verifiler.ValidationStep {
 
 		private bool IsExtensionValid(string file) {
 
-			var acceptedSignatures = signatures[Path.GetExtension(file).ToLower()];
+			var extension = Path.GetExtension(file).ToLower();
+			if (!signatures.ContainsKey(extension)) {
+				logger.Warn("Extension {0} has no known signatures in our database. Signature test will be skipped for this file.", extension);
+				return true;
+			}
+			var acceptedSignatures = signatures[extension];
 
 			FileStream stream = File.Open(file, FileMode.Open);
 			var signature = new byte[20];

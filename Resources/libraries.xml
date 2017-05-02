@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Libraries>
+  <Library name='VerifilerACCDB' extensions='.accdb' />
+  <Library name='VerifilerImage' extensions='.jpg,.png' />
+  <Library name='VerifilerMSLegacy' extensions='.xls' />
+  <Library name='VerifilerODF' extensions='.ods,.odt' />
+  <Library name='VerifilerOpenXML' extensions='.docx,.xlsx,.pptx' />
+  <Library name='VerifilerPDF' extensions='.pdf' />
+</Libraries>
