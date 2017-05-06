@@ -27,7 +27,7 @@ Verifiler offers a variety of commands, all listed below on this page. It all bo
   
 ### Validating files (initiating the scan)
   
-  * **Scan(string path)**
+  * **Inspector.Scan(string path)**
 
 Must be an absolute path to the file or directory. If a .zip archive is passed, it will be extracted to temporary folder and treated as a directory.
   
@@ -55,8 +55,8 @@ Assert.AreEqual(VerifilerCore.Result.Ok, res.Code());
 
 ### Anti-Virus scan
 
-  * **EnableAV(string pathToExecutable, string parameters)**                                           
-  * **DisableAV()**
+  * **Inspector.EnableAV(string pathToExecutable, string parameters)**                                           
+  * **Inspector.DisableAV()**
 
 Run AntiVirus engine installed on your machine and scan the files before they are analyzed by Verifiler. Most of available AntiVirus engines
 are packed with a console application, which is the application you are looking for. **DO NOT FORGET TO SET THE PARAMETERS CORRECTLY.**
@@ -78,8 +78,8 @@ inspector.EnableAV(pathToAV, parameters)
 
 ### VirusTotal
 
-  * **EnableVirusTotal(string apiKey)**
-  * **DisableVirusTotal()**
+  * **Inspector.EnableVirusTotal(string apiKey)**
+  * **Inspector.DisableVirusTotal()**
 
 Sends the files to [VirusTotal](https://www.virustotal.com/) and reports files with **Error.Fatal** if at least 10% of AV engines find
 the file suspicious. Should any of the files be found guilty, the scan process will terminate.
@@ -97,10 +97,10 @@ inspector.EnableVirusTotal(apiKey);
 
 ### Checksum whitelist
 
-  * **AddAllowedChecksum(string md5checksum)**
-  * **RemoveAllowedChecksum(string md5checksum)**
-  * **AddAllowedChecksums(string[] md5checksums)**
-  * **RemoveAllowedChecksums(string[] md5checksums)**
+  * **Inspector.AddAllowedChecksum(string md5checksum)**
+  * **Inspector.RemoveAllowedChecksum(string md5checksum)**
+  * **Inspector.AddAllowedChecksums(string[] md5checksums)**
+  * **Inspector.RemoveAllowedChecksums(string[] md5checksums)**
 
 Add or remove MD5 file checksum from the whitelist. If the whitelist is empty, this step will be skipped. If it is not empty,
 files whose checksum is not on the whitelist will be reported with Error.Checksum.
@@ -116,10 +116,10 @@ inspector = inspector.AddAllowedChecksum("B7C3B2E6A048869FD039BE423620C212")
 
 ### File extension
 
-  * **AddExtensionRestrictions(string[] types)**
-  * **AddExtensionRestriction(string type)**
-  * **RemoveExtensionRestrictions(string[] types)**
-  * **RemoveExtensionRestriction(string type)**
+  * **Inspector.AddExtensionRestrictions(string[] types)**
+  * **Inspector.AddExtensionRestriction(string type)**
+  * **Inspector.RemoveExtensionRestrictions(string[] types)**
+  * **Inspector.RemoveExtensionRestriction(string type)**
 
 Similar to checksum whitelist. Add or remove extensions from whitelist. If the whitelist is empty, this step will be skipped. If it is not empty,
 files whose extension is not on the whitelist will be reported with Error.Extension.
@@ -136,8 +136,8 @@ inspector = inspector.AddExtensionRestrictions(allowedTypes)
 
 ### File size
 
-  * **MinSize(int kilobytes)**
-  * **MaxSize(int kilobytes)**
+  * **Inspector.MinSize(int kilobytes)**
+  * **Inspector.MaxSize(int kilobytes)**
 
 Setup a minimum and/or maximum size in kilobytes of scanned files. Files who break this rule will be reported with **Error.Size**.
 
@@ -150,8 +150,8 @@ inspector = inspector.MinSize(256).MaxSize(1024);
 
 ### File signature
 
-  * **EnableSignatureTest()**
-  * **DisableSignatureTest()**
+  * **Inspector.EnableSignatureTest()**
+  * **Inspector.DisableSignatureTest()**
 
 Compares file's extension with file's magic number located in their header. Database of signatures was taken 
 from [File Signatures database](https://www.filesignatures.net/). Files who break this rule will be reported with **Error.Signature**.
@@ -165,8 +165,8 @@ inspector = inspector.EnableSignatureTest();
 
 ### File integrity verification
  
-  * **EnableFormatVerification()**
-  * **DisableFormatVerification()**
+  * **Inspector.EnableFormatVerification()**
+  * **Inspector.DisableFormatVerification()**
 
 Enables verifications of file's integrity. This requires for some of the optional packages to be installed (depending on which extensions you want to verify).
 Look at the [list of available packages](#list-of-optional-verification-libraries).
@@ -180,8 +180,8 @@ inspector = inspector.EnableFormatVerification();
 
 ### Custom validation step
 
-  * **AddCustomStep(Step step)**
-  * **RemoveAllCustomSteps()**
+  * **Inspector.AddCustomStep(Step)**
+  * **Inspector.RemoveAllCustomSteps()**
 
 You can add your own validation steps. In the example below, we create a validation step which checks the name of every file and let's though only those
 that start with string "abc". This means that "abctextfile.txt" will pass, but "defimage.jpg" will not. Failed tests will return Error.Generic or if you
@@ -213,7 +213,36 @@ class StartsWithStep : VerifilerCore.Step {
 		}
 	}
 }
-```
+```  
+                   
+---
+
+## List of support fuctions
+
+Library also has a couple of helpful functions which can assist you in debugging some unexpected behaviour. Use them if you want to find out if some
+optional library was correctly loaded or if the library supports some specific format.
+
+
+### Loading of optional libraries
+
+  * **List<string> Inspector.GetLoadedLibraries()**
+  * **bool Inspector.IsLibraryLoaded(string)**
+
+  These functions can quickly tell you which libraries were loaded during the initialization of Inspector. Optional libraries are loaded when **new Inspector()** is called.
+                
+**Example:** 
+```csharp  
+if (inspector.IsLibraryLoaded("VerifilerOpenXML")) {
+  //... 
+}
+```  
+  
+### Supported formats          
+
+  * **List<string> Inspector.GetListOfSupportedFormats()**
+  * **bool Inspector.IsFormatSupported(string)**
+  
+  Call these functions to quickly find out whether a library for given extension exists. If it exists, you can most likely find it here and download it via NuGet or GitHub.
 
 ---
 
