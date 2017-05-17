@@ -48,7 +48,6 @@ namespace Verifiler {
 			stepsList.Add(stepSignature);
 			stepsList.Add(stepSize);
 			
-			Console.WriteLine("Loading optional dependencies");
 			loader = new OptionalDependencyLoader();
 			foreach (var validator in loader.Load()) {
 				formatSpecificList.Add(validator);
@@ -353,27 +352,15 @@ namespace Verifiler {
 			result.SetFilesValid(Configuration.Instance.FileList);
 
 			/* If AV step is enabled, run it first. If it fails, abort scan. */
-			stepAvScan.Setup();
-			if (stepAvScan.Enabled()) {
-				RunStep(stepAvScan);
-				if (stepAvScan.FatalErrorEncountered) {
-					logger.Warn("Anti-Virus scan detected a malware in one of the files. Aborting.");
-					Cleanup();
-					result.SetResponseCode(Error.Fatal);
-					return result;
-				}
+			if (!RunAVStep(stepAvScan)) {
+				logger.Warn("Anti-Virus scan detected a malware in one of the files. Aborting.");
+				return result;
 			}
 
 			/* If VirusTotal scan step is enabled, run it first. If it fails, abort scan. */
-			stepVirusTotalScan.Setup();
-			if (stepVirusTotalScan.Enabled()) {
-				RunStep(stepVirusTotalScan);
-				if (stepVirusTotalScan.FatalErrorEncountered) {
-					logger.Warn("VirusTotal scan detected a malware in one of the files. Aborting.");
-					Cleanup();
-					result.SetResponseCode(Error.Fatal);
-					return result;
-				}
+			if (!RunAVStep(stepVirusTotalScan)) {
+				logger.Warn("VirusTotal scan detected a malware in one of the files. Aborting.");
+				return result;
 			}
 
 			/* First run default steps, abort if FatalError is encountered. Run custom steps after.*/
@@ -422,6 +409,19 @@ namespace Verifiler {
 			foreach (var step in customStepsList) {
 				step.Cleanup();
 			}
+		}
+
+		private bool RunAVStep(Step step) {
+			step.Setup();
+			if (step.Enabled()) {
+				RunStep(step);
+				if (step.FatalErrorEncountered) {
+					Cleanup();
+					result.SetResponseCode(Error.Fatal);
+					return false;
+				}
+			}
+			return true;
 		}
 	}
 }
